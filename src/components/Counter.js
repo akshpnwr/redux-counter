@@ -6,10 +6,6 @@ const Counter = () => {
   const counterIsVisible = useSelector((state) => state.counterIsVisible);
   const dispatch = useDispatch();
 
-  // const incrementHandler = () => {
-  //   dispatch({ type: "increment" });
-  // };
-
   const incrementHandler = (amount = 1) => {
     dispatch({ type: "increment", amount });
   };
