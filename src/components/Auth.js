@@ -1,7 +1,7 @@
 import classes from "./Auth.module.css";
 import UserProfile from "./UserProfile";
 import { useSelector, useDispatch } from "react-redux";
-import { authActions } from "../store";
+import { authActions } from "../store/auth";
 import { Fragment } from "react";
 const Auth = () => {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
